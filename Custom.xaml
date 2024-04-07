@@ -1,4 +1,7 @@
-﻿<!--3.8.30-->
+<!--
+    转载请标注来源：
+    https://github.com/ETOofficial/PCL-custom-xmal/tree/main
+-->
 
 <local:MyCard Title="MC 指令复制" IsSwaped="True" CanSwap="True" Margin="0,0,0,15">
     <StackPanel Margin="25,40,23,15">
@@ -58,12 +61,54 @@
 
 <local:MyCard Title="常用 mods" IsSwaped="True" CanSwap="True" Margin="0,0,0,15">
     <StackPanel Margin="25,40,23,15">
-        <TextBlock Margin="0,0,0,4" TextWrapping="Wrap"
-            Text="、、边拿边走、便携工作台、传说工作提示、动态准心、多态合成、附魔类、更多生物变种、更好地破坏半砖、更好的 F3 、合成辅助、护甲上限突破、键位冲突显示、经验机制改革、进度牌匾、垃圾槽、模组名称显示、苹果皮、拾取提示、潜影盒工具提示、属性修复、鼠标手势、提示、铁砧修复、物理声效重置版、物品边框、物品高亮、现代化修复、整理类、连锁类、玉、战利品光束、装备比较" />
-        <local:MyListItem Margin="0,0,0,8" Title="仓储类" Info="背包、箱子" />
-        <local:MyListItem Margin="0,0,0,8" Title="物品管理器类" Info="JEI、JER、NEI" />
-        <local:MyListItem Margin="0,0,0,8" Title="地图类" Info="Xaero 的小地图" />
-        <local:MyListItem Margin="0,0,0,8" Title="FPS 减速器" />
+        <local:MyCard Title="必装 mods" IsSwaped="True" CanSwap="True" Margin="0,0,0,15">
+            <local:MyListItem Margin="0,0,0,8" Title="物品管理器类" Info="JEI、JER、NEI等" />
+            <local:MyListItem Margin="0,0,0,8" Title="地图类" Info="Xaero 的小地图、旅行地图等" />
+            <local:MyListItem Margin="0,0,0,8" Title="整理类" Info="R 键整理等" />
+            <local:MyListItem Margin="0,0,0,8" Title="更好地破坏半砖" />
+            <local:MyListItem Margin="0,0,0,8" Title="鼠标手势" />
+            <local:MyListItem Margin="0,0,0,8" Title="物理声效重置版" />
+            <local:MyListItem Margin="0,0,0,8" Title="连锁采集" />
+        </local:MyCard>
+        <local:MyCard Title="优化体验类" IsSwaped="True" CanSwap="True" Margin="0,0,0,15">
+            <local:MyListItem Margin="0,0,0,8" Title="仓储类" Info="背包、箱子" />
+            <local:MyListItem Margin="0,0,0,8" Title="边拿边走" />
+            <local:MyListItem Margin="0,0,0,8" Title="便携工作台" />
+            <local:MyListItem Margin="0,0,0,8" Title="多态合成" />
+            <local:MyListItem Margin="0,0,0,8" Title="合成辅助" />
+            <local:MyListItem Margin="0,0,0,8" Title="护甲上限突破" />
+            <local:MyListItem Margin="0,0,0,8" Title="垃圾槽" />
+            <local:MyListItem Margin="0,0,0,8" Title="拾取提示" />
+            <local:MyListItem Margin="0,0,0,8" Title="属性修复" />
+            <local:MyListItem Margin="0,0,0,8" Title="铁砧修复" />
+            <local:MyListItem Margin="0,0,0,8" Title="装备比较" />
+        </local:MyCard>
+        <local:MyCard Title="优化性能类" IsSwaped="True" CanSwap="True" Margin="0,0,0,15">
+            <local:MyListItem Margin="0,0,0,8" Title="FPS 减速器" />
+            <local:MyListItem Margin="0,0,0,8" Title="现代化修复" />
+            <local:MyListItem Margin="0,0,0,8" Title="" />
+            <local:MyListItem Margin="0,0,0,8" Title="经验机制改革" />
+        </local:MyCard>
+        <local:MyCard Title="外观类" IsSwaped="True" CanSwap="True" Margin="0,0,0,15">
+            <local:MyListItem Margin="0,0,0,8" Title="传说工具提示" />
+            <local:MyListItem Margin="0,0,0,8" Title="动态准心" />
+            <local:MyListItem Margin="0,0,0,8" Title="更多生物变种" />
+            <local:MyListItem Margin="0,0,0,8" Title="进度牌匾" />
+            <local:MyListItem Margin="0,0,0,8" Title="提示" />
+            <local:MyListItem Margin="0,0,0,8" Title="物品边框" />
+            <local:MyListItem Margin="0,0,0,8" Title="战利品光束" />
+        </local:MyCard>
+        <local:MyCard Title="信息显示类" IsSwaped="True" CanSwap="True" Margin="0,0,0,15">
+            <local:MyListItem Margin="0,0,0,8" Title="附魔描述" />
+            <local:MyListItem Margin="0,0,0,8" Title="附魔排序" />
+            <local:MyListItem Margin="0,0,0,8" Title="模组名称显示" />
+            <local:MyListItem Margin="0,0,0,8" Title="键位冲突显示" />
+            <local:MyListItem Margin="0,0,0,8" Title="更好的 F3" />
+            <local:MyListItem Margin="0,0,0,8" Title="潜影盒工具提示" />
+            <local:MyListItem Margin="0,0,0,8" Title="苹果皮" />
+            <local:MyListItem Margin="0,0,0,8" Title="玉" />
+            <local:MyListItem Margin="0,0,0,8" Title="物品高亮" />
+        </local:MyCard>
     </StackPanel>
 </local:MyCard>
 
