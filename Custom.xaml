@@ -1,0 +1,304 @@
+﻿<!--3.8.30-->
+
+<local:MyCard Title="MC 指令复制" IsSwaped="True" CanSwap="True" Margin="0,0,0,15">
+    <StackPanel Margin="25,40,23,15">
+        <local:MyCard Title="重生点" IsSwaped="True" Margin="0,0,0,15" CanSwap="True">
+            <StackPanel Margin="25,40,23,15">
+                <local:MyListItem Margin="0,0,0,8" Title="设置当前位置为重生点" Info="/spwanpoint" Logo="pack://application:,,,/images/Blocks/CommandBlock.png"
+                    EventType="复制文本" EventData="/spwanpoint" Type="Clickable" />
+                <local:MyListItem Margin="0,0,0,8" Title="设置当前位置为世界重生点" Info="/setworldspawn" Logo="pack://application:,,,/images/Blocks/CommandBlock.png"
+                    EventType="复制文本" EventData="/setworldspawn" Type="Clickable" />
+            </StackPanel>
+        </local:MyCard>
+        <local:MyCard Title="死亡不掉落" IsSwaped="True" Margin="0,0,0,15" CanSwap="True">
+            <StackPanel Margin="25,40,23,15">
+                <local:MyListItem Margin="0,0,0,8" Title="打开死亡不掉落" Info="/gamerule keepInventory true" Logo="pack://application:,,,/images/Blocks/CommandBlock.png"
+                    EventType="复制文本" EventData="/gamerule keepInventory true" Type="Clickable" />
+                <local:MyListItem Margin="0,0,0,8" Title="关闭死亡不掉落" Info="/gamerule keepInventory false" Logo="pack://application:,,,/images/Blocks/CommandBlock.png"
+                    EventType="复制文本" EventData="/gamerule keepInventory false" Type="Clickable" />
+            </StackPanel>
+        </local:MyCard>
+        <local:MyCard Title="防爆" IsSwaped="True" Margin="0,0,0,15" CanSwap="True">
+            <StackPanel Margin="25,40,23,15">
+                <local:MyListItem Margin="0,0,0,8" Title="打开防爆" Info="/gamerule mobGriefing false" Logo="pack://application:,,,/images/Blocks/CommandBlock.png"
+                    EventType="复制文本" EventData="/gamerule mobGriefing false" Type="Clickable" />
+                <local:MyListItem Margin="0,0,0,8" Title="关闭防爆" Info="/gamerule mobGriefing true" Logo="pack://application:,,,/images/Blocks/CommandBlock.png"
+                    EventType="复制文本" EventData="/gamerule mobGriefing true" Type="Clickable" />
+            </StackPanel>
+        </local:MyCard>
+        <local:MyCard Title="天气" IsSwaped="True" Margin="0,0,0,15" CanSwap="True">
+            <StackPanel Margin="25,40,23,15">
+                <local:MyListItem Margin="0,0,0,8" Title="设置无天气" Info="/weather clear" Logo="pack://application:,,,/images/Blocks/CommandBlock.png"
+                    EventType="复制文本" EventData="/weather clear" Type="Clickable" />
+                <local:MyListItem Margin="0,0,0,8" Title="设置晴天" Info="/weather sun" Logo="pack://application:,,,/images/Blocks/CommandBlock.png"
+                    EventType="复制文本" EventData="/weather sun" Type="Clickable" />
+                <local:MyListItem Margin="0,0,0,8" Title="设置雨天" Info="/weather rain" Logo="pack://application:,,,/images/Blocks/CommandBlock.png"
+                    EventType="复制文本" EventData="/weather rain" Type="Clickable" />
+                <local:MyListItem Margin="0,0,0,8" Title="设置雷雨" Info="/weather thunder" Logo="pack://application:,,,/images/Blocks/CommandBlock.png"
+                    EventType="复制文本" EventData="/weather thunder" Type="Clickable" />
+                <local:MyListItem Margin="0,0,0,8" Title="设置雪天" Info="/weather storm" Logo="pack://application:,,,/images/Blocks/CommandBlock.png"
+                    EventType="复制文本" EventData="/weather storm" Type="Clickable" />
+            </StackPanel>
+        </local:MyCard>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <local:MyButton Margin="0,0,10,15" Width="140" Height="35" Padding="13,0,13,0" ColorType="Highlight"
+                Text="查看其他指令" EventType="弹出窗口" EventData="其他指令|/? ： /help  的替代命令，提供命令使用帮助。\n/ability ：赋予或剥夺玩家的能力。\n/advancement ：添加、移除或查询玩家的进度。\n/alwaysday ： /daylock  的替代命令，锁定或解锁日夜循环。\n/attribute ：修改或查询玩家和生物的属性。\n/ban ：将玩家加入封禁列表。\n/ban-ip ：将 IP 地址加入封禁列表。\n/banlist ：显示封禁列表。\n/bossbar ：修改或查询 Boss 栏。\n/camerashake ：启用镜头抖动效果。\n/changesetting ：更改一个正在运行的服务器的设置。\n/clear ：从玩家物品栏中删除物品。\n/clearspawnpoint ：从世界中移除出生点。\n/clone ：将特定区域的方块复制到另一处。\n/connect ： /wsserver 的替代命令，连接至一个 WebSocket 服务器。\n/damage ：对指定实体造成伤害。\n/data ：允许玩家获取、合并或是移除实体或方块的 NBT 标签。\n/datapack ：控制加载的数据包。\n/daylock ： /alwaysday 的替代命令，锁定或解锁日夜循环。\n/debug ：开始或结束调试会话。\n/dedicatedwsserver ：尝试连接一个 WebSocket 服务器。\n/defaultgamemode ：更改默认的游戏模式。\n/deop ：撤销玩家的管理员权限。\n/dialogue ：打开一个玩家的 NPC 对话。\n/difficulty ：设置难度等级。\n/effect ：添加或移除状态效果。\n/enchant ：附魔玩家的物品。\n/event ：用于触发一个实体的事件。\n/execute ：更改执行环境的情况下执行另一条命令。\n/experience ： /xp 的替代命令，给予玩家经验。\n/fill ：在某个区域填充特定方块。\n/fog ：用于更改玩家当前的雾设置。\n/forceload ：强制不断加载区块。\n/function ：运行一个函数。\n/gamemode ：更改玩家的游戏模式。\n/gamerule ：更改或查询游戏规则。\n/gametest ：用于测试 GameTest 功能。\n/give ：给予玩家物品。\n/help ： /? 的替代命令，提供命令使用帮助。\n/immutableworld ：设置世界的不可变状态。\n/item ：用于修改方块或实体的物品栏。\n/jfr ：开始或结束 JFR 分析。\n/kick ：将玩家踢出服务器。\n/kill ：清除实体(玩家、生物、掉落物等)。\n/list ：列出服务器中的玩家。\n/locate ：显示最近的给定结构、生物群系或兴趣点的坐标。\n/loot ：将指定的战利品放入物品栏或世界。\n/me ：显示一条关于自己的信息。\n/mobevent ：控制或查询允许运行的生物事件。\n/msg ： /tell 和 /w 的替代命令，向另一玩家发送私信。\n/music ：设置玩家是否能控制当前播放的音乐。\n/op ：授予玩家管理员权限。\n/ops ： /permission 的替代命令，重载并应用权限。\n/pardon ：从封禁列表中移除玩家封禁项目。\n/pardon-ip ：从封禁列表中移除 IP 封禁项目。\n/particle ：创建粒子。\n/perf ：记录并保存性能分析数据。\n/permission ： /ops 的替代命令，重载并应用权限。\n/place ：在满足条件的指定位置放置一个已配置地物、拼图或结构。\n/playanimation ：运行一次特定动作。\n/playsound ：播放音效。\n/publish ：向局域网开放单人游戏世界。\n/recipe ：给予或剥夺合成配方。\n/reload ：从硬盘中重新加载战利品表、进度和函数。\n/remove ：移除智能体。\n/replaceitem ：替换物品栏中的物品。\n/ride ：控制一个实体的骑行状态。\n/save ：准备备份，查询其状态或恢复。\n/save-all ：保存服务器世界状态到硬盘。\n/save-off ：关闭服务器自动保存。\n/save-on ：开启服务器自动保存。\n/say ：向多个玩家发送消息。\n/schedule ：安排函数在特定的游戏刻后运行。\n/scoreboard ：管理记分板的目标、玩家和队伍。\n/seed ：显示世界种子。\n/setblock ：将方块替换为其他方块。\n/setidletimeout ：设置无操作玩家被踢出的延时。\n/setmaxplayers ：设置可加入游戏的玩家数量上限。\n/setworldspawn ：设置世界出生点。\n/spawnpoint ：设置一个玩家的出生地点。\n/spectate ：使一个处于旁观模式的玩家旁观一个实体。\n/spreadplayers ：将实体传送到随机位置。\n/stop ：关闭服务器。\n/stopsound ：停止音效。\n/structure ：无需结构方块即可保存和加载结构。\n/summon ：生成一个实体。\n/tag ：修改实体的标签。\n/team ：修改队伍。\n/teammsg ： /tm 的替代命令，指定要发送给队伍的消息。\n/teleport ： /tp 的替代命令，传送实体。\n/tell ： /msg 和 /w 的替代命令，向另一个玩家发送私信。\n/tellraw ：向玩家显示 JSON 消息。\n/testfor ：统计符合给定条件的实体。\n/testforblock ：检测某方块是否在某位置。\n/testforblocks ：检测两个区域中的方块是否相同。\n/tickingarea ：添加、删除或列出常加载区域。\n/time ：更改或查询游戏中的世界时间。\n/title ：管理屏幕上的标题。\n/titleraw ：使用 JSON 管理屏幕上的标题。\n/tm ： /teammsg 的替代命令，指定要发送给队伍的消息。\n/toggledownfall ：切换天气。\n/tp ： /teleport 的替代命令，传送实体。\n/trigger ：设置一个触发器。\n/volumearea ：添加、删除或列出功能域。\n/w ： /tell 和 /msg 的替代命令，向另一玩家发送私信。\n/wb ： /worldbuilder 的替代命令，给予能编辑受限制方块的能力。\n/weather ：设置天气。\n/whitelist ：管理服务器白名单。\n/worldborder ：管理世界边界。\n/worldbuilder ： /wb 的替代命令，给予能编辑受限制方块的能力。\n/wsserver ： /connect 的替代命令，连接至 WebSocket 服务器。\n/xp ： /experience 的替代命令（仅 Java 版），增加或减少一个玩家的经验。"/>
+        </StackPanel>
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="网页" IsSwaped="True" CanSwap="True" Margin="0,0,0,15">
+    <StackPanel Margin="25,40,23,15">
+        <local:MyListItem Margin="0,0,0,8" Title="MCBBS" Info="Minecraft中文论坛" Logo="https://www.mcbbs.net/favicon.ico"
+            EventType="打开网页" EventData="https://www.mcbbs.net/" Type="Clickable" />
+        <local:MyListItem Margin="0,0,0,8" Title="MC 百科" Info="最大的 Minecraft 中文 Mod 百科" Logo="https://www.mcmod.cn/favicon.ico"
+            EventType="打开网页" EventData="https://www.mcmod.cn/" Type="Clickable" />
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="常用 mods" IsSwaped="True" CanSwap="True" Margin="0,0,0,15">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock Margin="0,0,0,4" TextWrapping="Wrap"
+            Text="、、边拿边走、便携工作台、传说工作提示、动态准心、多态合成、附魔类、更多生物变种、更好地破坏半砖、更好的 F3 、合成辅助、护甲上限突破、键位冲突显示、经验机制改革、进度牌匾、垃圾槽、模组名称显示、苹果皮、拾取提示、潜影盒工具提示、属性修复、鼠标手势、提示、铁砧修复、物理声效重置版、物品边框、物品高亮、现代化修复、整理类、连锁类、玉、战利品光束、装备比较" />
+        <local:MyListItem Margin="0,0,0,8" Title="仓储类" Info="背包、箱子" />
+        <local:MyListItem Margin="0,0,0,8" Title="物品管理器类" Info="JEI、JER、NEI" />
+        <local:MyListItem Margin="0,0,0,8" Title="地图类" Info="Xaero 的小地图" />
+        <local:MyListItem Margin="0,0,0,8" Title="FPS 减速器" />
+    </StackPanel>
+</local:MyCard>
+
+
+<!--以下是教程-->
+
+<local:MyCard Title="自定义主页教程" IsSwaped="True" Margin="0,0,0,15" CanSwap="True">
+    <StackPanel Margin="25,40,23,15">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <local:MyButton Margin="0,0,10,15" Width="140" Height="35" Padding="13,0,13,0" ColorType="Highlight"
+                Text="刷新主页" EventType="刷新主页" />
+            <local:MyButton Margin="0,0,10,15" Width="140" Height="35" Padding="13,0,13,0" ColorType="Highlight"
+                Text="打开XAML文件" EventType="打开文件" EventData="Custom.xaml" />
+        </StackPanel>
+        <local:MyCard Title="基础教学 1：纯文本" IsSwaped="True" Margin="0,0,0,15" CanSwap="True">
+            <StackPanel Margin="25,40,23,15">
+                <TextBlock Margin="0,0,0,4" TextWrapping="Wrap"
+                    Text="每个 local:MyCard 代表一张卡片，你可以添加、删除格式类似的 MyCard 来添加多个卡片。每个 TextBlock 代表一段文本，你可以在 Text 中书写任何你想写的内容。你也可以自行添加更多的 TextBlock。" />
+                <TextBlock Margin="0,0,0,4" Foreground="#8C7721" TextWrapping="Wrap"
+                    Text="你可以通过添加、删除属性修改样式，例如上面的 Foreground 会修改字体颜色。" />
+                <TextBlock Margin="20,5,20,0" FontSize="11" TextWrapping="Wrap"
+                    Text="它还有许多可以调整的属性：Margin 调整边距，FontSize 调整字号，TextWrapping 则是启用自动换行。" />
+            </StackPanel>
+        </local:MyCard>
+        <local:MyCard Title="基础教学 2：卡片属性、提示条" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+            <StackPanel Margin="25,40,23,15">
+                <local:MyHint Text="local:MyHint 代表提示条，它默认是警告样式。" />
+                <local:MyHint Margin="0,8,0,2" IsWarn="False"
+                    Text="将提示条的 IsWarn 属性改为 False 即可改为提示样式。&#xA;使用左边的那堆字符可以在任意地方手动换行，如果需要使用等号、引号等特殊字符，可以自行百度 XAML 转义字符。" />
+                <TextBlock Margin="0,6,0,0" TextWrapping="Wrap"
+                    Text="卡片（local:MyCard）的 Title 属性决定了它的标题。&#xA;为卡片添加 CanSwap 属性让它可以被折叠，True 代表是，False 代表否。在此基础上，再使用 IsSwaped 属性调整它是否默认被折叠。" />
+            </StackPanel>
+        </local:MyCard>
+        <local:MyCard Title="基础教学 3：长宽属性、图片" IsSwaped="True" Margin="0,0,0,15" CanSwap="True">
+            <StackPanel Margin="25,40,23,15">
+                <TextBlock Margin="0,0,0,4" Width="320" HorizontalAlignment="Right" TextWrapping="Wrap"
+                    Text="任意项目都可以添加 Width 与 Height 控制宽高，此外通过 HorizontalAlignment 来控制对齐：Center 代表居中，Right 代表居右。例如这段文本就被居右了。" />
+                <TextBlock Margin="0,0,0,6" TextWrapping="Wrap"
+                    Text="Image 代表图片，你需要在它的 Source 属性中填写一个网址或文件路径，它会从该处获取图片并显示。你通常也需要用 Height 限制它的高度。" />
+                <Image Height="50" HorizontalAlignment="Center" Source="https://www.mcbbs.net/template/mcbbs/image/logo_sc.png" />
+            </StackPanel>
+        </local:MyCard>
+        <local:MyCard Title="按钮教学 1：基础" IsSwaped="True" Margin="0,0,0,15" CanSwap="True">
+            <StackPanel Margin="25,40,23,15">
+                <TextBlock Margin="0,0,0,4" TextWrapping="Wrap"
+                    Text="你可以通过添加 local:MyButton 来新建一个按钮。你需要通过上一张卡片中提到的宽高属性来限定它的尺寸与位置，通过 Padding 属性控制它的内边距。" />
+                <TextBlock Margin="0,0,0,10" TextWrapping="Wrap"
+                    Text="按钮可以做到很多事，例如将 EventType 属性改为 打开网页，然后在 EventData 属性中写入网址，即可通过点击按钮打开网页。" />
+                <local:MyButton Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                    Text="打开 MCBBS" EventType="打开网页" EventData="https://www.mcbbs.net/" />
+                <TextBlock Margin="0,10,0,10" TextWrapping="Wrap"
+                    Text="或者将 EventType 属性改为 弹出窗口，然后在 EventData 属性中写入弹窗的标题与内容……" />
+                <local:MyButton Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                    Text="显示一个弹窗" EventType="弹出窗口" EventData="这是标题|标题与内容以竖线间隔。\n你也可以直接在其中换行。" />
+            </StackPanel>
+        </local:MyCard>
+        <local:MyCard Title="按钮教学 2：属性" IsSwaped="True" Margin="0,0,0,15" CanSwap="True">
+            <StackPanel Margin="25,40,23,15">
+                <TextBlock TextWrapping="Wrap"
+                    Text="你可以修改 ColorType 属性来调整按钮配色，Highlight 代表当前主题色，Red 代表红色。ToolTip 属性还可以让你在鼠标悬浮在上面的时候显示提示文本。" />
+                <local:MyButton Margin="0,8,0,10" Width="250" Height="35" ColorType="Highlight"
+                    Text="打开 Wiki（按钮是主题色）" EventType="打开网页" EventData="https://minecraft-zh.gamepedia.com/Minecraft_Wiki" ToolTip="点击打开 Minecraft Wiki！" />
+                <TextBlock TextWrapping="Wrap"
+                    Text="local:MyTextButton 是没有边框的文本按钮，你同样可以设置 EventType 与 EventData 让它具有特定功能。" />
+                <local:MyTextButton Margin="0,8,0,0" HorizontalAlignment="Center"
+                    Text="点击打开知乎" EventType="打开网页" EventData="https://www.zhihu.com/" />
+            </StackPanel>
+        </local:MyCard>
+        <local:MyCard Title="按钮教学 3：启动游戏" IsSwaped="True" Margin="0,0,0,15" CanSwap="True">
+            <StackPanel Margin="25,40,23,15">
+                <TextBlock TextWrapping="Wrap"
+                    Text="EventType 改为启动游戏，EventData 改为游戏版本，即可点击启动特定版本的游戏。如果当前游戏文件夹没有该版本则无法启动。" />
+                <local:MyButton Margin="0,8,0,10" Width="250" Height="35"
+                    Text="启动 Minecraft 1.12.2" EventType="启动游戏" EventData="1.12.2" />
+                <TextBlock TextWrapping="Wrap"
+                    Text="在 EventData 后面添加一条竖线（|），然后写服务器 IP，即可在启动该版本的同时自动进入服务器。按 Shift + 回车键上方的键就能打出来竖线了。" />
+                <local:MyButton Margin="0,8,0,0" Width="250" Height="35"
+                    Text="使用 1.12.2 进入 Hypixel" EventType="启动游戏" EventData="1.12.2|mc.hypixel.net" ToolTip="服务器 IP：mc.hypixel.net" />
+            </StackPanel>
+        </local:MyCard>
+        <local:MyCard Title="按钮教学 4：打开文件" IsSwaped="True" Margin="0,0,0,15" CanSwap="True">
+            <StackPanel Margin="25,40,23,15">
+                <TextBlock TextWrapping="Wrap"
+                    Text="EventType 为打开文件，EventData 为文件路径，即可点击打开特定文件或启动程序。" />
+                <local:MyButton Margin="0,8,0,8" Width="200" Height="35"
+                    Text="打开记事本" EventType="打开文件" EventData="notepad.exe" />
+                <TextBlock Margin="0,4,0,0" TextWrapping="Wrap"
+                    Text="如果能在 PCL 文件夹中找到该文件，则会优先打开 PCL 文件夹中的文件。当然，你可以使用例如 C:\ 开头的绝对路径。" />
+                <TextBlock TextWrapping="Wrap"
+                    Text="此外，PCL2 会将文件中的花括号 path 替换为 PCL 可执行文件所在文件夹（{path}），可以用于执行特定程序或加载图片。" />
+                <local:MyButton Margin="0,8,0,8" Width="200" Height="35"
+                    Text="打开 PCL 日志" EventType="打开文件" EventData="Log1.txt" ToolTip="PCL2 的日志文件就在 PCL 文件夹内，且名为 Log1.txt" />
+                <TextBlock Margin="0,4,0,0" TextWrapping="Wrap"
+                    Text="就像为游戏指定服务器 IP 一样，你也可以在 EventData 的竖线后为程序添加启动参数。" />
+                <local:MyButton Margin="0,8,0,0" Width="200" Height="35"
+                    Text="定位游戏启动脚本" EventType="打开文件" EventData="explorer.exe|/select,LatestLaunch.bat" ToolTip="PCL2 会将上一次启动 MC 的脚本保存在 PCL 文件夹内，且名为 LatestLaunch.bat。&#xA;点击按钮会打开文件管理器，并且借助参数要求它选中这个文件。" />
+            </StackPanel>
+        </local:MyCard>
+        <local:MyCard Title="按钮教学 5：其他命令" IsSwaped="True" Margin="0,0,0,15" CanSwap="True">
+            <StackPanel Margin="25,40,23,15">
+                <TextBlock Margin="0,0,0,4" TextWrapping="Wrap"
+                    Text="EventType 为复制文本，会将 EventData 中的内容复制到剪贴板。" />
+                <TextBlock Margin="0,0,0,4" TextWrapping="Wrap"
+                    Text="EventType 为刷新主页，即可点击重新加载主页。如果你使用联网方式下载主页文件，你可以通过这一方式更新主页内容。它无需指定 EventData。" />
+                <TextBlock TextWrapping="Wrap"
+                    Text="EventType 为下载文件，会在点击时要求选择文件保存位置，并且下载 EventData 的链接中的文件。" />
+                <local:MyButton Margin="0,8,0,0" Width="250" Height="35"
+                    Text="下载 MCBBS 的 Logo" EventType="下载文件" EventData="https://www.mcbbs.net/template/mcbbs/image/logo_sc.png" />
+            </StackPanel>
+        </local:MyCard>
+        <local:MyCard Title="高级：复杂按钮布局" CanSwap="True" IsSwaped="True" Margin="0,0,0,15">
+            <StackPanel Margin="25,40,23,15">
+                <local:MyHint Margin="0,0,0,7" IsWarn="False"
+                    Text="下面的按钮列举了全部 6 种 EventType 作为示例。" />
+                <TextBlock Margin="0,0,0,4" TextWrapping="Wrap"
+                    Text="你需要用到 StackPanel 在一横行里塞下多个按钮，你可以仅在这个教学卡片的基础上稍作调整，来实现自己的按钮布局。" />
+                <TextBlock Margin="0,0,0,10" TextWrapping="Wrap"
+                    Text="如果你要实现更复杂的布局，你必须使用 Grid 等控件。多百度吧……谷歌也行。" />
+                <!-- 这是第一行 -->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Highlight"
+                        Text="打开 B 站" EventType="打开网页" EventData="https://www.bilibili.com/" />
+                    <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                        Text="进入 Hypixel" EventType="启动游戏" EventData="1.16.3|mc.hypixel.net" ToolTip="使用 Minecraft 1.16.3 进入 Hypixel" />
+                    <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                        Text="打开画图" EventType="打开文件" EventData="mspaint.exe" />
+                </StackPanel>
+                <!-- 这是第二行 -->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
+                    <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Red"
+                        Text="复制召唤命令" EventType="复制文本" EventData="/execute as @a at @s run summon Creeper ~ ~2 ~" ToolTip="这条 Minecraft 命令会在每个玩家头顶召唤一只苦力怕！" />
+                    <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                        Text="刷新主页" EventType="刷新主页" ToolTip="这通常用于联网更新主页时刷新信息，对本地文件没啥用" />
+                    <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                        Text="下载作者的头像" EventType="下载文件" EventData="https://www.mcbbs.net/uc_server/data/avatar/000/14/51/06_avatar_small.jpg?ts=1471402592" />
+                </StackPanel>
+            </StackPanel>
+        </local:MyCard>
+        <local:MyCard Title="高级：全局动态资源绑定" CanSwap="True" IsSwaped="True" Margin="0,0,0,15">
+            <StackPanel Margin="25,40,23,15">
+                <TextBlock TextWrapping="Wrap" LineHeight="17" Margin="0,0,0,15"
+                    Text="你可以使用全局动态资源绑定的方式来给你的控件赋予全局主题色。" />
+                <TextBlock TextWrapping="Wrap"
+                    Text="你好世界！" Foreground="{DynamicResource ColorBrush1}"/>
+                <TextBlock TextWrapping="Wrap"
+                    Text="你好世界！" Foreground="{DynamicResource ColorBrush3}"/>
+                <TextBlock TextWrapping="Wrap"
+                    Text="你好世界！" Foreground="{DynamicResource ColorBrush5}"/>
+                <TextBlock TextWrapping="Wrap" LineHeight="17" Margin="0,15,0,15"
+                    Text="除了字体颜色的前景色，你也可以用于背景色、边框等绝大部分的颜色参数，参考如下复杂例子。" />
+                <Border Background="{DynamicResource ColorBrush5}" BorderBrush="{DynamicResource ColorBrush2}"
+                    CornerRadius="3" HorizontalAlignment="Stretch" BorderThickness="1" Height="27px" Opacity="0.7">
+                    <Grid>
+                        <Path Fill="{DynamicResource ColorBrush1}" Stretch="Fill" Width="15" Height="15" HorizontalAlignment="Left" Margin="10,0,0,0"
+                            Data="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"></Path>
+                        <TextBlock Foreground="{DynamicResource ColorBrush1}" Margin="35,5,0,0" Text="仿造的同步主题色的信息条。" />
+                    </Grid>
+                </Border>
+            </StackPanel>
+        </local:MyCard>
+        <local:MyCard Title="高级：预置图片和列表项" CanSwap="True" IsSwaped="True" Margin="0,0,0,15">
+            <StackPanel Margin="25,40,23,15">
+                <TextBlock TextWrapping="Wrap" LineHeight="17"
+                    Text="PCL2 中包含一些预置的方块与物品图片，可以直接使用。"/>
+                <StackPanel Orientation="Horizontal">
+                    <Image Width="30" Height="30" Margin="15,15,0,15" Source="pack://application:,,,/images/Blocks/CommandBlock.png"/>
+                    <!-- 命令方块 -->
+                    <Image Width="30" Height="30" Margin="5,15,0,15" Source="pack://application:,,,/images/Blocks/Cobblestone.png"/>
+                    <!-- 圆石 -->
+                    <Image Width="30" Height="30" Margin="5,15,0,15" Source="pack://application:,,,/images/Blocks/GoldBlock.png"/>
+                    <!-- 金块 -->
+                    <Image Width="30" Height="30" Margin="5,15,0,15" Source="pack://application:,,,/images/Blocks/Grass.png"/>
+                    <!-- 草方块 -->
+                    <Image Width="30" Height="30" Margin="5,15,0,15" Source="pack://application:,,,/images/Blocks/GrassPath.png"/>
+                    <!-- 草径 -->
+                    <Image Width="30" Height="30" Margin="5,15,0,15" Source="pack://application:,,,/images/Blocks/Anvil.png"/>
+                    <!-- 铁砧（zhen） -->
+                    <Image Width="30" Height="30" Margin="5,15,0,15" Source="pack://application:,,,/images/Blocks/RedstoneBlock.png"/>
+                    <!-- 红石块 -->
+                    <Image Width="30" Height="30" Margin="5,15,0,15" Source="pack://application:,,,/images/Blocks/RedstoneLampOn.png"/>
+                    <!-- 红石灯（亮） -->
+                    <Image Width="30" Height="30" Margin="5,15,0,15" Source="pack://application:,,,/images/Blocks/RedstoneLampOff.png"/>
+                    <!-- 红石灯（灭） -->
+                    <Image Width="30" Height="30" Margin="5,15,0,15" Source="pack://application:,,,/images/Blocks/Egg.png"/>
+                    <!-- 鸡蛋 -->
+                    <Image Width="30" Height="30" Margin="5,15,0,15" Source="pack://application:,,,/images/Blocks/Fabric.png"/>
+                    <!-- 布料（Fabric 图标） -->
+                </StackPanel>
+                <TextBlock TextWrapping="Wrap" LineHeight="17"
+                    Text="在需要更详细的列出内容时，你可以使用列表项来替代按钮。在列表项中，点击操作的使用方式与按钮相同。"/>
+                <local:MyListItem Margin="-5,15,-5,0" 
+                    Logo="https://www.baidu.com/favicon.ico" Title="百度" Info="百度一下，你就知道！" 
+                    EventType="打开网页" EventData="https://www.baidu.com/" Type="Clickable" />
+                <local:MyListItem Margin="-5,0,-5,8"
+                    EventType="打开帮助" EventData="帮助/自定义帮助.json" Type="Clickable" />
+            </StackPanel>
+        </local:MyCard>
+    </StackPanel>
+</local:MyCard>
+
+<!-- 
+
+全部通用的属性：
+ - Width、Height：设置宽度与高度
+ - ToolTip：设置鼠标指向时的提示文本
+ - Foreground：调整前景颜色（十六进制字符串，例如 #FF010203 代表 ARGB 中的 255,1,2,3。前两位代表不透明度，FF 为全不透明，00 为全透明）
+ - Background：调整背景颜色（使用类似 Background="{DynamicResource ColorBrush5}" 的格式以调用 PCL2 当前的主题颜色，修改末尾的数字编号以改变颜色浓度）
+ - Margin：调整外边距（格式为 左,上,右,下。例如 Margin="0,0,0,2" 即为 2 单位的下边距）
+ - HorizontalAlignment：设置对齐方式（Left、Center、Right）
+
+TextBlock（纯文本）：
+ - Text：设置显示的文本（如果要使用引号等特殊字符，自行百度 XAML 转义）
+ - TextWrapping：开启自动换行
+ - FontSize：设置字号
+ 
+Image（图片）：
+ - Source：要显示的图片的网址
+
+local:MyHint（提示条）：
+ - Text：设置显示的文本（&#xA; 代表换行）
+ - IsWarn：设置为 True 代表警告样式，False 代表提示样式
+ 
+local:MyButton（按钮）：
+ - Text：设置显示的文本
+ - Padding：设置内边距，格式与 Margin 一致
+ - ColorType：设置颜色主题（Highlight 为当前启动器的主题颜色，Red 为红色，默认为黑色）
+ - EventType、EventData：触发特定事件
+ 
+local:MyTextButton（文本按钮）：
+ - Text：设置显示的文本
+ - EventType、EventData：触发特定事件
+ 
+local:MyCard（卡片）：
+ - Title：设置显示的标题文本
+ - CanSwap：这张卡片是否可以折叠，True 为是，False 为否
+ - IsSwaped：这张卡片是否默认折叠，要求 CanSwap 必须为 True
+
+-->
