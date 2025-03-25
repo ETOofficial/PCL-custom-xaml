@@ -3,7 +3,6 @@ from sys import argv
 from time import time
 
 from tkinter import *
-from tinui.TinUI import TinUI
 
 # 调试用
 debug = False
@@ -95,7 +94,7 @@ def openEdit():
         input()
 
 
-def 换行符转换(text):
+def lineBreakConversion(text):
     '''\\n ---> &#xA;'''
     text = list(text)
     for i in range(len(text)):
@@ -113,7 +112,7 @@ def newMycard(id, title, swap, win):
     newid = new_id()
 
     try:
-        title = 换行符转换(title)
+        title = lineBreakConversion(title)
         
         # 文件编辑
         lines = read_xaml()
@@ -271,7 +270,7 @@ def newTextBlock(id, text, win):
     newid = new_id()
 
     try:
-        text = 换行符转换(text)
+        text = lineBreakConversion(text)
 
         # 文件编辑
         lines = read_xaml()
@@ -401,7 +400,7 @@ def newMyHint(id, text, is_warn, win):
     newid = new_id()
 
     try:
-        text = 换行符转换(text)
+        text = lineBreakConversion(text)
 
         # 文件编辑
         lines = read_xaml()
