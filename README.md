@@ -28,7 +28,9 @@
 2. 如有其它意见，请联系 `dynastxu@qq.com` 。
 
 
-# Custom.py
+# ~~Custom.py~~
+
+> ⚠ 该文件已终止维护
 
 ## 说明
 
